@@ -4,18 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReviewDto {
+public class TravelerGroupDto {
 
     private UUID id;
-    private String content;
-    private int rating;
-    private LocalDate date;
-    private UUID locationId;
-    private UUID travelerId;
+    private String name;
+    private List<UUID> members;
+    private List<UUID> sharedPreferences;
 }
