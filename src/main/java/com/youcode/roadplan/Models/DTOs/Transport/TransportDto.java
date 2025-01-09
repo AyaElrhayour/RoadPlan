@@ -1,4 +1,4 @@
-package com.youcode.roadplan.Models.DTOs;
+package com.youcode.roadplan.Models.DTOs.Transport;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.youcode.roadplan.Models.DTOs;
+package com.youcode.roadplan.Models.DTOs.Review;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReviewDto {
+public class ReviewsDto {
 
     private UUID id;
     private String content;

@@ -1,4 +1,4 @@
-package com.youcode.roadplan.Models.DTOs;
+package com.youcode.roadplan.Models.DTOs.Users;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,9 +9,12 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ActivityDto {
+public class UserDto {
 
     private UUID id;
-    private String title;
-    private String description;
+    private String fullName;
+    private String email;
+    private String profilePicture;
+
+
 }

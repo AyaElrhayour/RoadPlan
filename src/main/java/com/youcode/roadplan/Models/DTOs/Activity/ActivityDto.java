@@ -1,18 +1,17 @@
-package com.youcode.roadplan.Models.DTOs;
+package com.youcode.roadplan.Models.DTOs.Activity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PrefrencesDto {
+public class ActivityDto {
 
     private UUID id;
-    private String category;
-    private List<String> keywords;
+    private String title;
+    private String description;
 }
