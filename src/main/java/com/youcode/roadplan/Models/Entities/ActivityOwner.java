@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ActivityOwner {
+public class ActivityOwner extends User {
 
     private String businessName;
-    private String location;
 }

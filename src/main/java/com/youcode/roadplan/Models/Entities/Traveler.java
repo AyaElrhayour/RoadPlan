@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Travler extends User {
+public class Traveler extends User {
 
     private String userName;
 
