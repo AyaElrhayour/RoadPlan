@@ -1,6 +1,7 @@
 package com.youcode.roadplan.Models.Entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,9 +17,15 @@ public class Traveler extends User {
 
     private String userName;
 
-    @OneToMany(mappedBy = "traveler")
+    @ManyToMany
     private List<TravelPlan> travelPlans;
 
-    @OneToMany(mappedBy = "traveler")
+    @ManyToMany
     private List<Preferences> preferences;
+
+    @OneToMany
+    private List<Reviews> reviews;
+
+    @ManyToMany
+    private List<Group> groups;
 }
